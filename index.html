@@ -1,0 +1,45 @@
+<html>
+        <body><!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Percentage calcultor</h1>
+        <input type="number" placeholder="Enter the whole number" id="whole">
+        <br>
+        <br>
+        <input type="number" placeholder="Enter the amount of percentage you want to extract" id="percent">
+        <br>
+        <br>
+        <button onclick="find()">Calculate</button>
+    <p id="answer"></p>
+    </body>
+</html></body>
+        <style>body{
+    background-color:steelblue ;
+    text-align: center;
+    color: lightsteelblue;
+}
+input{
+   
+    text-align: center;
+    background-color: lightsteelblue;
+    border-radius: 50px;
+    width: 350px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+button{
+    
+  
+    background-color: lightsteelblue;
+    border-radius: 50px;
+   
+}</style>
+        <script>function find(){
+    var whole="";
+    var percent="";
+    percent= document.getElementById("percent").value;
+    whole= document.getElementById("whole").value;
+    document.getElementById("answer").innerHTML= percent * whole / 100
+}</script>
+      </html>
